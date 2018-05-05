@@ -10,8 +10,9 @@ int input() {
 
 void sum(const int times) {
   int sum = 0;
-  int box[times - 1];
+  int box[times];
 
+  // 入力
   for (int i = 0; i < times; ++i) {
     int x;
     cout << "Enter an integer > ";
@@ -19,6 +20,7 @@ void sum(const int times) {
     box[i] = x;
   }
 
+  // 出力
   for (int i = 0; i < times; ++i) {
     sum += box[i];
     cout << box[i];
@@ -28,7 +30,6 @@ void sum(const int times) {
       cout << " + ";
     }
   }
-
   cout << sum << endl;
 }
 
